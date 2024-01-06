@@ -20,5 +20,4 @@ buildNumber.properties
 **/gradlew.bat
 **/.gradle
 **/.gitignore
-**/gradle-wrapper.jar
 
