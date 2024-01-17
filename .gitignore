@@ -20,4 +20,5 @@ buildNumber.properties
 **/gradlew.bat
 **/.gradle
 **/.gitignore
+**/out
 

@@ -31,16 +31,12 @@ allprojects {
     tasks.withType<KotlinCompile> {
         kotlinOptions {
             freeCompilerArgs += "-Xjsr305=strict"
-            jvmTarget = "21"
+            jvmTarget = JavaVersion.VERSION_21.toString()
         }
     }
 
     tasks.withType<Test> {
         useJUnitPlatform()
-    }
-
-    tasks.jar {
-        enabled = true
     }
 }
 
@@ -59,6 +55,10 @@ subprojects {
         imports {
             mavenBom("org.springframework.cloud:spring-cloud-dependencies:${property("springCloudVersion")}")
         }
+    }
+
+    tasks.bootJar {
+        enabled = true
     }
 }
 
