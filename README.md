@@ -1,2 +1,2 @@
-# gulimail
-谷粒商城
+# gulimail-kt
+谷粒商城kotlin版
